@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit',sans-serif;
+}
+
+body{
+  background: hsl(30, 54%, 90%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  background: #fff;
+  max-width: 600px;
+  width: 90%;
+  padding: 30px;
+  margin: 100px auto;
+  border-radius: 20px;
+  transition: transform 0.4s,box-shadow 0.4s;
+}
+
+.container:hover{
+  transform: scale(1.05);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.line{
+  width: 95%;
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+  margin-bottom: 20px;
+}
+
+.first-sec{
+  margin-bottom: 18px;
+}
+
+.first-sec img{
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.first-sec h1{
+  margin-bottom: 14px;
+}
+
+.first-sec p{
+  color: hsl(30, 10%, 34%);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.second-sec{
+  margin-bottom: 20px;
+  background: hsl(330, 100%, 98%);
+  border-radius: 6px;
+  padding: 25px 20px;
+}
+
+.second-sec h3{
+  font-size: 16px;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 10px;
+}
+
+.second-sec span{
+  color: hsl(30, 10%, 34%);
+}
+
+.second-sec ul,.third-sec ul{
+  padding-left: 25px; 
+}
+
+.second-sec li {
+  margin-bottom: 8px;
+  color: hsl(30, 10%, 34%);
+  font-size: 13.5px;
+}
+
+.second-sec li::marker {
+  color: hsl(332, 51%, 32%); 
+  font-size: 12px
+}
+
+.third-sec{
+ margin-bottom: 25px;
+}
+
+.third-sec h2{
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 10px;
+}
+
+.third-sec li{
+  padding-left: 5px;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 10px;
+  font-size: 13.5px;
+}
+
+.third-sec li::marker{
+  color: hsl(14, 45%, 36%);
+  font-size: 12px;
+}
+
+.fourth-sec{
+  margin-bottom: 25px;
+}
+
+.fourth-sec h2{
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 12px;
+}
+
+.fourth-sec ol{
+  padding-left: 20px;
+}
+
+.fourth-sec li{
+  padding-left: 10px;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 12px;
+  font-size: 13.5px;
+}
+
+.fourth-sec li::marker{
+  color: hsl(14, 45%, 36%);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.fifth-sec h2{
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 10px;
+}
+
+.fifth-sec p{
+  color: hsl(30, 10%, 34%);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.fifth-sec table{
+  padding-left: 18px;
+}
+
+.nutrition-table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  color: hsl(30, 10%, 34%);
+  font-size: 14px;
+}
+
+.nutrition-table td {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.table-line {
+  width: 100%;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  display: block;
+}
+
+.values {
+  font-weight: 800;
+  color: hsl(14, 45%, 36%);;
+}
+
+.nutrition-table td:hover {
+  background-color: hsl(30, 80%, 90%);
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  .first-sec h1 {
+    font-size: 22px;
+  }
+
+  .first-sec p, .second-sec li, .third-sec li, .fourth-sec li, .fifth-sec p {
+    font-size: 14px;
+  }
+
+  .nutrition-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-sec h1 {
+    font-size: 20px;
+  }
+
+  .first-sec p, .second-sec li, .third-sec li, .fourth-sec li, .fifth-sec p {
+    font-size: 12px;
+  }
+
+  .nutrition-table td {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
